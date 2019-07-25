@@ -1,4 +1,4 @@
-# Intro Screen
+# First Time Screen
 
 * Displays an intro screen if app has been opened for the first time
 
@@ -9,12 +9,12 @@
     dependencies:
         flutter:
             sdk: flutter
-        intro_screen:
+        first_time_screen:
 ```
 
 * How to use
 ```dart
-    intro_screen(
+    FirstTimeScreen(
         loadingScreen: Text("Loading"),
         introScreen: MaterialPageRoute(builder: (context) => Intro()),
         landingScreen: MaterialPageRoute(builder: (context) => Home()),
