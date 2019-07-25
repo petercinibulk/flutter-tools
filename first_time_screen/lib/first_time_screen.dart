@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -33,7 +32,7 @@ class _FirstTimeScreenState extends State<FirstTimeScreen> {
     if (_seen) {
       Navigator.of(context).pushReplacement(widget.landingScreen);
     } else {
-      prefs.setBool('seen', true);
+      prefs.setBool('intro_screen_seen', true);
       Navigator.of(context).pushReplacement(widget.introScreen);
     }
   }
